@@ -14,7 +14,7 @@ const exitComment = document.querySelector('.exit-comment');
 let audio = document.createElement("audio");
 audio.loop = true;
 let audioSource = document.createElement("source");
-audioSource.setAttribute("src","gameaudio.mp3");
+audioSource.setAttribute("src","audios/gameaudio.mp3");
 audioSource.setAttribute("type","audio/wav");
 gamePage.appendChild(audio);
 audio.appendChild(audioSource);
@@ -75,7 +75,7 @@ function start(){
   cardiv.setAttribute("class","cardiv");
   let car = document.createElement("img");
   car.setAttribute("class","car");
-  car.setAttribute("src","mycar.png");
+  car.setAttribute("src","images/mycar.png");
   gameArea.appendChild(cardiv);
   cardiv.appendChild(car);
   player.x = cardiv.offsetLeft;
@@ -88,7 +88,7 @@ function start(){
     enemydiv.classList.add("enemydiv");
     let enemycar = document.createElement("img");
     enemycar.setAttribute("class","enemycar");
-    enemycar.setAttribute("src","enemycar.png");
+    enemycar.setAttribute("src","images/enemycar.png");
     enemydiv.y = ((x+1)*400)*(-1);
     enemydiv.style.top = enemydiv.y + "px";
     enemydiv.style.left = Math.floor(Math.random()*70) + "px";
@@ -170,7 +170,7 @@ function moveLines(){
     let aRect = a.getBoundingClientRect();
     let bRect = b.getBoundingClientRect();
     return !(
-      ((aRect.bottom + 5) < (bRect.top)) ||
+      ((aRect.bottom - 4) < (bRect.top)) ||
       ((aRect.top - 3) > bRect.bottom) ||
       ((aRect.right - 3 ) < bRect.left) ||
       ((aRect.left + 3) > bRect.right)

@@ -39,7 +39,7 @@ body, .startPage, .gamePage{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url("w8.jpg");
+    background-image: url("images/w8.jpg");
     background-size: cover;
     background-position: bottom;
     position: absolute;
@@ -112,7 +112,7 @@ body, .startPage, .gamePage{
 
 .gpdiv1{
     flex-direction: column;
-    background-image: url("w10.jpg");
+    background-image: url("images/w10.jpg");
     background-position: center;
     min-width: 100px;
 }
@@ -124,7 +124,7 @@ body, .startPage, .gamePage{
 
 .gpdiv3{
     flex-direction: column;
-    background-image: url("w91.png");
+    background-image: url("images/w91.png");
     background-position: bottom;
 }
 
@@ -185,19 +185,19 @@ body, .startPage, .gamePage{
     border-color: white;
 }
 .noob{
-    background-image: url("noob.jpg");
+    background-image: url("images/noob.jpg");
 }
 
 .skilled{
-    background-image: url("skilled.jpg");
+    background-image: url("images/skilled.jpg");
 }
 
 .master{
-    background-image: url("master.jpg");
+    background-image: url("images/master.jpg");
 }
 
 .pro{
-    background-image: url("pro.jpg");
+    background-image: url("images/pro.jpg");
 }
 
 .levelinfo-title{
@@ -252,7 +252,7 @@ body, .startPage, .gamePage{
     background-color: rgb(91, 202, 91);
     width: 50px;
     height: 100%;
-    background-image: url(grass.jpg);
+    background-image: url("images/grass.jpg");
 }
 
 .cardiv, .enemydiv{
@@ -333,8 +333,4 @@ body, .startPage, .gamePage{
     font-family: cursive;
     font-size: 2vw;
     margin-bottom: 4px;
-}
-
-@media (max-width: 500px) {
-    
 }
