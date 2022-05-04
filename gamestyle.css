@@ -1,0 +1,340 @@
+/* ----------- DEFAULT CSS ----------- */
+.hide{
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 500px;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
+    color: rgba(4, 4, 4, 0.902);
+}
+
+/* ----------- General CSS ----------- */
+
+body, .startPage, .gamePage{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* ------ Start page css ------ */
+
+.startPage{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("w8.jpg");
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+}
+
+.spdiv{
+    margin: 5px;
+    height: 60%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.spdiv1, .spdiv2{
+    
+    border-radius: 20px;
+    flex: 1;
+    width: 100%;
+    height: 50%;
+    margin: 3%;
+}
+
+.spdiv1{
+    background-color: rgba(255, 222, 75, 0.735);
+    flex-direction: column;
+}
+
+.start-button{
+    width: 50%;
+    height: 40%;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(113, 176, 19);
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 4vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.start-button:hover{
+    background-color: rgba(113, 176, 19, 0.84);
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+.start-button:active{
+    background-color: rgb(113, 176, 19);
+}
+
+
+/* ------- Game page CSS ------- */
+
+.gamePage{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.gpdiv1, .gpdiv2, .gpdiv3{
+    flex: 1;
+    border: solid;
+    border-width: 1px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.gpdiv1{
+    flex-direction: column;
+    background-image: url("w10.jpg");
+    background-position: center;
+    min-width: 100px;
+}
+
+.gpdiv2{
+    background-color: aquamarine;
+    flex-direction: row;
+}
+
+.gpdiv3{
+    flex-direction: column;
+    background-image: url("w91.png");
+    background-position: bottom;
+}
+
+.scoreboard-div{
+    border-width: 1px;
+    flex-direction: column;
+    border: solid;
+    margin: 3px;
+    height: 20%;
+    width: 60%;
+    border-radius: 20px;
+    margin-bottom: 30%;
+    border-color: white;
+    background-color: rgba(107, 196, 255, 0.792);
+}
+
+.scoreboard{
+    color: rgb(0, 0, 0);
+    font-family: 'Chicle', cursive;
+    font-size: 30px;
+}
+
+.score{
+    color: rgb(143, 2, 2);
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.leveldivtitle, .leveldivcontent{
+    width: 60%;
+    height: 120px;
+    margin: 2px;
+}
+
+.leveldivtitle{
+    height: 50px;
+    border: solid;
+    border-radius: 20px;
+    border-color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(107, 196, 255, 0.861);
+    font-family: 'Chicle', cursive;
+    font-size: 30px;
+}
+
+.levelinfo{
+    margin: 3px;
+    flex: 1;
+    height: 90%;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.noob, .skilled, .master, .pro{
+    background-size:cover;
+    border-width: 2px;
+    border: solid;
+    border-color: white;
+}
+.noob{
+    background-image: url("noob.jpg");
+}
+
+.skilled{
+    background-image: url("skilled.jpg");
+}
+
+.master{
+    background-image: url("master.jpg");
+}
+
+.pro{
+    background-image: url("pro.jpg");
+}
+
+.levelinfo-title{
+    background-color: rgba(130, 214, 250, 0.751);
+    height: 30%;
+    width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.levelinfo-body{
+    background-color: rgba(220, 220, 212, 0.509);
+    height: 70%;
+    width: 100%;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    font-family: 'Merienda', cursive;
+    font-weight: bolder;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+/* ----- Specific to Game Area ------ */
+
+.gameArea{
+    width: 360px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(54, 54, 54);
+}
+
+.timer{
+    border: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+    background-color: rgba(255, 255, 0, 0.884);
+    width: 30%;
+    height: 18%;
+    border-radius: 60px;
+    font-family: 'Chicle', cursive;
+    font-size: 50px;
+    z-index: 10;
+    
+}
+
+.grassL, .grassR{
+    background-color: rgb(91, 202, 91);
+    width: 50px;
+    height: 100%;
+    background-image: url(grass.jpg);
+}
+
+.cardiv, .enemydiv{
+    position: absolute;
+    margin: auto;
+    bottom: 20px;
+    left: 110px;
+    border: solid;
+    border-radius: 8px;
+    background-color: rgb(31, 31, 31);
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    width: 53px;
+    height: 130px;
+}
+
+.car, .enemycar{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.line{
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 10px;
+}
+
+.yll, .ylr{
+    background-color: yellow;
+    width: 8px;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay{
+    background-color: rgba(55, 55, 55, 0.632);
+    width: 100%;
+    z-index: 10;
+}
+.popup{
+    flex-direction: column;
+    width: 35vw;
+    height: 14vw;
+    background-color: rgba(255, 229, 60, 0.553);
+    border-radius: 4vw;
+}
+
+.btn{
+    margin: 2vw;
+    width: 12vw;
+    height: 4vw;
+    border-radius: 5vh;
+    border: none;
+    background-color: green;
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 1.5vw;
+}
+
+.btn:hover{
+    background-color: rgba(237, 234, 234, 0.881);
+    color: green;
+    border: solid;
+    border-width: 2px;
+    border-color: green;
+}
+
+.btn:active{
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+.exit-comment{
+    font-family: cursive;
+    font-size: 2vw;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 500px) {
+    
+}

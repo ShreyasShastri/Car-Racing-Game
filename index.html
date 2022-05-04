@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Mania Game</title>
+        <link rel="stylesheet" href="gamestyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Press+Start+2P&family=Rubik+Glitch&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Merienda&display=swap" rel="stylesheet">
+        <script src="gamescript.js" defer></script>
+    </head>
+    <body>
+        <div class="startPage">
+            <div class="spdiv">
+                <div class="spdiv1">
+                    <centre><p>WELCOME TO</p></centre>
+                    <centre><p>--&#62; Car Mania &#60;--</p></centre> 
+                </div>
+                <div class="spdiv2">
+                    <button class="start-button">START</button>
+                </div>
+            </div>
+        </div>
+        <div class="gamePage hide">
+            <div class="gpdiv1">
+                <div class="leveldivtitle">Levels</div>
+                <div class="leveldivcontent">
+                    <div class="levelinfo noob">
+                        <div class="levelinfo-title">Noob</div>
+                        <div class="levelinfo-body">Score &#60; 2000</div>
+                    </div>
+                    <div class="levelinfo skilled">
+                        <div class="levelinfo-title">Skilled</div>
+                        <div class="levelinfo-body">Score &#62; 2000</div>
+                    </div>
+                </div>
+                <div class="leveldivcontent">
+                    <div class="levelinfo master">
+                        <div class="levelinfo-title">Master</div>
+                        <div class="levelinfo-body">Score &#62; 5000</div>
+                    </div>
+                    <div class="levelinfo pro">
+                        <div class="levelinfo-title">Pro</div>
+                        <div class="levelinfo-body">Score &#62; 8000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="gpdiv2">
+                <div class="grassL"></div>
+                <div class="gameArea">
+                    <div class="timer hide"></div>
+                </div>
+                <div class="grassR"></div>
+            </div>
+            <div class="gpdiv3">
+                <div class="scoreboard-div">
+                    <p class="scoreboard">Score Board</p>
+                    <p class="score">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="overlay hide">
+            <div class="popup">
+                <h2 class="exit-comment"></h2>
+                <div class="popup-buttons">
+                    <button class="btn" onclick="restartButton()">PLAY AGAIN</button>
+                    <button class="btn" onclick="exitButton()">EXIT</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
