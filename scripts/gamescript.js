@@ -212,7 +212,3 @@ function moveLines(){
   function restartButton(){
     refreshPage();
   }
-
-  function exitButton(){
-    window.close();
-  }
