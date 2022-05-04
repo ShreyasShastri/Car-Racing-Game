@@ -75,7 +75,7 @@ function start(){
   cardiv.setAttribute("class","cardiv");
   let car = document.createElement("img");
   car.setAttribute("class","car");
-  car.setAttribute("src","images/mycar.png");
+  car.setAttribute("src","styles/images/mycar.png");
   gameArea.appendChild(cardiv);
   cardiv.appendChild(car);
   player.x = cardiv.offsetLeft;
@@ -88,7 +88,7 @@ function start(){
     enemydiv.classList.add("enemydiv");
     let enemycar = document.createElement("img");
     enemycar.setAttribute("class","enemycar");
-    enemycar.setAttribute("src","images/enemycar.png");
+    enemycar.setAttribute("src","styles/images/enemycar.png");
     enemydiv.y = ((x+1)*400)*(-1);
     enemydiv.style.top = enemydiv.y + "px";
     enemydiv.style.left = Math.floor(Math.random()*70) + "px";
