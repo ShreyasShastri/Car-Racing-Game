@@ -60,7 +60,7 @@ function start(){
   audio.play();
   
   /* To create white lines on the road*/
-  for (let x=0;x<10;x++){
+  for (let x=0;x<15;x++){
     let div = document.createElement("div");
     div.classList.add("line");
     div.y = x*100;
@@ -103,17 +103,17 @@ function endGame(){
     const finalScore = player.score
     score.innerHTML= finalScore;
     if (finalScore <= 2000){
-      exitComment.innerHTML = "<center>You are a Noob !!</center>"
+      exitComment.innerHTML = "<center>You are such a Noob<br><span style='font-size:30px;'>&#128118;</span></center>"
       endPopup();
     }else if(finalScore > 2000 && finalScore <= 5000){
-      exitComment.innerHTML = "<center>You are now Skilled !!</center>"
+      exitComment.innerHTML = "<center>Impressive! You are Skilled<br><span style='font-size:30px;'>&#128513;</span></center>"
       endPopup();
     }
     else if(finalScore > 5000 && finalScore <= 8000){
-      exitComment.innerHTML = "<center>You are Master of this game !!</center>"
+      exitComment.innerHTML = "<center>Damn! You are Master of this game<br><span style='font-size:30px;'>&#128526;</span></center>"
       endPopup();
     }else{
-      exitComment.innerHTML = "<center>You are really a Pro !!</center>"
+      exitComment.innerHTML = "<center>You are really a Pro !!<br><span style='font-size:30px;'>&#128293;</span></center>"
       endPopup();
     }
 }

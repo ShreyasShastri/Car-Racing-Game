@@ -8,7 +8,6 @@ html, body {
     padding: 0;
     margin: 0;
     position: relative;
-    min-width: 500px;
 }
 
 div{
@@ -31,6 +30,7 @@ body, .startPage, .gamePage{
     display: flex;
     height: 100%;
     width: 100%;
+    min-width: 750px;
 }
 
 /* ------ Start page css ------ */
@@ -47,7 +47,6 @@ body, .startPage, .gamePage{
 
 .spdiv{
     margin: 5px;
-    height: 60%;
     width: 40%;
     align-items: center;
     justify-content: center;
@@ -55,7 +54,6 @@ body, .startPage, .gamePage{
 }
 
 .spdiv1, .spdiv2{
-    
     border-radius: 20px;
     flex: 1;
     width: 100%;
@@ -126,6 +124,7 @@ body, .startPage, .gamePage{
     flex-direction: column;
     background-image: url("images/w91.png");
     background-position: bottom;
+    min-width: 100px;
 }
 
 .scoreboard-div{
@@ -167,7 +166,7 @@ body, .startPage, .gamePage{
     color: rgb(255, 255, 255);
     background-color: rgba(107, 196, 255, 0.861);
     font-family: 'Chicle', cursive;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .levelinfo{
@@ -221,7 +220,7 @@ body, .startPage, .gamePage{
     align-items:flex-end;
     padding-bottom: 10px;
     color: rgb(0, 0, 0);
-    font-size: 15px;
+    font-size: .8rem;
 }
 
 /* ----- Specific to Game Area ------ */
@@ -297,8 +296,8 @@ body, .startPage, .gamePage{
 }
 .popup{
     flex-direction: column;
-    width: 35vw;
-    height: 14vw;
+    width: 38vw;
+    height: 35%;
     background-color: rgba(255, 229, 60, 0.553);
     border-radius: 4vw;
 }
@@ -333,4 +332,109 @@ body, .startPage, .gamePage{
     font-family: cursive;
     font-size: 2vw;
     margin-bottom: 4px;
+}
+
+@media only screen and (max-width:1140px) and (min-width: 960px) {
+    .leveldivcontent{
+        flex-direction: column;
+        height: 10em;
+        width: 100%;
+    }
+    .levelinfo{
+        width: 70%;
+    }
+    .leveldivtitle{
+        width: 80%;
+    }
+    .levelinfo-body{
+        align-items: center;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:959px) and (min-width: 830px) {
+    .leveldivcontent{
+        flex-direction: column;
+        height: 10em;
+        width: 100%;
+    }
+    .levelinfo{
+        width: 80%;
+    }
+    .leveldivtitle{
+        width: 90%;
+        font-size: 3.5vw;
+    }
+    .levelinfo-title{
+        font-size: 1.8vw;
+    }
+    .levelinfo-body{
+        align-items: center;
+        font-size: 1.5vw
+    }
+    .scoreboard{
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width:829px) and (min-width: 600px) {
+    .leveldivcontent{
+        flex-direction: column;
+        width: 100%;
+        height: 10em;
+        margin: 0;
+    }
+    .leveldivtitle{
+        width: 90%;
+    }
+    .levelinfo{
+        width: 85%;
+    }
+    .levelinfo-body{
+        align-items: center;
+        font-size: 1.5vw
+    }
+    .scoreboard-div{
+        width: 80%;
+    }
+    .scoreboard{
+        font-size: 3vw;
+    }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 699px) {
+    .spdiv{
+        width: 60%;
+    }
+    .game-heading{
+        font-size: 6vw;
+    }
+    .start-button{
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 399px){
+    .spdiv{
+        width: 70%;
+    }
+    .game-heading{
+        font-size: 8vw;
+    }
+    .start-button{
+        font-size: 8vw;
+    }
+}
+
+@media only screen and (max-width: 199px){
+    .spdiv, .spdiv1, .spdiv2{
+        width: 100%;
+    }
+    .game-heading{
+        font-size: 10vw;
+    }
+    .start-button{
+        font-size: 10vw;
+    }
 }
